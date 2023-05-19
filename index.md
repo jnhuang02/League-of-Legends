@@ -44,6 +44,7 @@ As seen here, the distribution of the gamelengths of the leagues do vary, which 
 - Interesting Aggregates:
 This outlines the stats of all the maximum, minimum, standard deviation, variance, etc, of the game durations of each tier 1 league. From there
         we can deduce which leagues stand out from the rest which can better help accept or reject the null hypothesis.
+        
 | league   |   count |   max |    mean |   median |   min |    std |    var |
 |:---------|--------:|------:|--------:|---------:|------:|-------:|-------:|
 | CBLOL    |     243 |  2861 | 1974.09 |     1928 |  1275 | 322.13 | 103768 |
