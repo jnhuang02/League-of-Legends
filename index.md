@@ -12,10 +12,10 @@ Our project chooses the data of League of Legend Competitive Matches. This data 
 
 ## Cleaning and EDA
 - Data Cleaning:
-We clean the data by only taking a specific list of leagues, since our analysis only wants the  leagues that are in tier 1. By cleaning the data, we can focus on the data that we want. It help us to analyze the information faster. 
-```py
-print(tier_1[['gameid', 'gamelength', 'league']].head().to_markdown(index=False))
-```
+We clean the data by only taking a specific list of leagues, since our analysis only wants the leagues that are in tier 1, which is 'LCK', 'LPL', 'LEC', 'LCS', 'PCS', 'VCS', 'CBLOL', 'LJL', 'LLA'. 
+            Since we are only looking at gamelengths and league so far, we are only going to keep those two columns. GameID is also important. We notice that the gamelength for every single player in the same game is the same, which makes it redundent and repetivtive to keep repeating the same time for every player
+            in the game. Therefore it's useful to only keep one unique gameid at a time.
+            
 
 | gameid           |   gamelength | league   |
 |:-----------------|-------------:|:---------|
@@ -28,7 +28,7 @@ print(tier_1[['gameid', 'gamelength', 'league']].head().to_markdown(index=False)
 
 - Univariate Analysis:
 This plot shows how many games in each interval of gamelength. Most of the games have a gamelength between 1500-2500, but there are still games that have a gamelength that close to zero or over 3000.
-<iframe src="assets/fig1.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="fig1.html" width=800 height=600 frameBorder=0></iframe>
 
 - Bivariate Analysis:
 This plot shows the relationship between different leagues and their gamelength. In this plot, we can see that LPL and LCK have a gamelength that are much more than the other leagues.
@@ -36,9 +36,7 @@ This plot shows the relationship between different leagues and their gamelength.
 
 - Interesting Aggregates:
 This pivot table contains the information of the mean, count maximum, minimum, median, standard deviation, and variance of the gamelength for each league.
-```py
-print(tier_pivot[['mean', 'count', 'max', 'min', 'median', 'var', 'std']].to_markdown(index=False))
-```
+
 |    mean |   count |   max |   min |   median |      var |    std |
 |--------:|--------:|------:|------:|---------:|---------:|-------:|
 | 1974.09 |     243 |  2861 |  1275 |     1928 | 103768   | 322.13 |
