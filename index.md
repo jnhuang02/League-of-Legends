@@ -36,8 +36,8 @@ As seen here, the distribution of the gamelengths of the leagues do vary, which 
 <p><iframe src="plot2.html" width=800 height=600 frameBorder=0></iframe></p>
 
 - Interesting Aggregates:
-This pivot table contains the information of the mean, count maximum, minimum, median, standard deviation, and variance of the gamelength for each league.
-
+This outlines the stats of all the maximum, minimum, standard deviation, variance, etc, of the game durations of each tier 1 league. From there
+        we can deduce which leagues stand out from the rest which can better help accept or reject the null hypothesis.
 | league   |   count |   max |    mean |   median |   min |    std |    var |
 |:---------|--------:|------:|--------:|---------:|------:|-------:|-------:|
 | CBLOL    |     243 |  2861 | 1974.09 |     1928 |  1275 | 322.13 | 103768 |
