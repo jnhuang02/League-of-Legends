@@ -56,6 +56,7 @@ This outlines the stats of all the maximum, minimum, standard deviation, varianc
 ---
 
 ## Assessment of Missingness:
+We believe that there is a column in the data set that is Not Missing At Random, which is monster kills own at jungle. This is because although this stat may seem completely random, the empty data can be explained by where the map takes place. If a map in league does not have a jungle map, then there cannot be any monster kills, which is why that data is null for certain games. However, since that certain data is not on the csv file, this cannot be concluded.
 
 ---
 
