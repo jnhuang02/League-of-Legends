@@ -60,7 +60,7 @@ This outlines the stats of all the maximum, minimum, standard deviation, varianc
 ---
 
 ## Assessment of Missingness:
-We believe that there is a column in the data set that is Not Missing At Random, which is monster kills own at jungle. This is because although this stat may seem completely random, the empty data can be explained by where the map takes place. If a map in league does not have a jungle map, then there cannot be any monster kills, which is why that data is null for certain games. However, since that certain data is not on the csv file, this cannot be concluded.
+We believe that there is a column in the data set that is Not Missing At Random, which is monster kills own jungle. This is because although this stat may seem completely random, the empty data can be explained by where the map takes place. If a map in league does not have a jungle map, then there cannot be any monster kills own at jungle, which is why that data is null for certain games. However, since that certain data is not on the csv file, this cannot be concluded.
 
 For our analysis on choosing two variables, we chose to have our two columns that do not depend on each other to be double kills for missing and wpm. Having double kills present or not does not exactly correlate with the wpm in competitive matches as the missingness in double kills is most likely due to the game being partially completed. After manually looking at the data, we concluded that double kills is most likely null for partial games since the game has not been officially a full game for the stats to be concluded.
 
