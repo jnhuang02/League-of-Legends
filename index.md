@@ -115,7 +115,7 @@ We assume that 'doublekills' and 'wpm' do not depend on each other because wpm m
   - The P value between LPL and PCS is 0.11803774648906282
   - The P value between LPL and VCS is 5.6061553426685654e-06
   - The P value between PCS and VCS is 0.027700142589951404           
-  - The T test is a good choice for this question because we are comparing the means of groups. We chose 0.05/36 by using alpha bernouli as our significant level due to there being a total of 36 comparisons needed. This is because we don’t have that much evidence to reject this null hypothesis. 
+- The T test is a good choice for this question because we are comparing the means of groups. We chose 0.05/36 by using alpha bernouli as our significant level due to there being a total of 36 comparisons needed. This is because we don’t have that much evidence to reject this null hypothesis. 
 - After running our hyothesis test, We see that there are significant differences in average game duration between certain leagues.
 
 ---
