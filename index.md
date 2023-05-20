@@ -79,43 +79,43 @@ We assume that 'doublekills' and 'wpm' do not depend on each other because wpm m
 - Test statistic: T-test
 - Significance level: 0.05/36, using alpha bernouli since there are 9 leagues in tier 1 and a total of 36 comparisons for all of the leagues
 - The P-value between every combination of the leagues is as follows:
-            -The P value between CBLOL and LCK is 0.09463990461494619
-            -The P value between CBLOL and LCS is 0.7876156683770301
-            -The P value between CBLOL and LEC is 0.5373527716345259
-            -The P value between CBLOL and LJL is 0.10207328430808504
-            -The P value between CBLOL and LLA is 0.6261142149262305
-            -The P value between CBLOL and LPL is 0.0005256706367859629
-            -The P value between CBLOL and PCS is 9.005130506488931e-05
-            -The P value between CBLOL and VCS is 4.375151567768843e-11
-            -The P value between LCK and LCS is 0.1315083620379078
-            -The P value between LCK and LEC is 0.3472804909787468
-            -The P value between LCK and LJL is 0.0009890558218275361
-            -The P value between LCK and LLA is 0.3161959546967639
-            -The P value between LCK and LPL is 9.314774760529871e-11
-            -The P value between LCK and PCS is 2.992591664215375e-09
-            -The P value between LCK and VCS is 6.694916135134773e-19
-            -The P value between LCS and LEC is 0.6912287326362201
-            -The P value between LCS and LJL is 0.0490400404839303
-            -The P value between LCS and LLA is 0.7936396948845161
-            -The P value between LCS and LPL is 3.992102102090342e-05
-            -The P value between LCS and PCS is 1.0572958670128944e-05
-            -The P value between LCS and VCS is 5.076060868498343e-13
-            -The P value between LEC and LJL is 0.03522194308818198
-            -The P value between LEC and LLA is 0.9126692988401927
-            -The P value between LEC and LPL is 3.2366223946643715e-05
-            -The P value between LEC and PCS is 1.599648873927649e-05
-            -The P value between LEC and VCS is 5.662536887803942e-12
-            -The P value between LJL and LLA is 0.051695087953736514
-            -The P value between LJL and LPL is 0.2577316630510385
-            -The P value between LJL and PCS is 0.047206801281997945
-            -The P value between LJL and VCS is 2.060568938709088e-05
-            -The P value between LLA and LPL is 0.0002075167042443045
-            -The P value between LLA and PCS is 4.897368171899932e-05
-            -The P value between LLA and VCS is 4.2819772152884424e-11
-            -The P value between LPL and PCS is 0.11803774648906282
-            -The P value between LPL and VCS is 5.6061553426685654e-06
-            -The P value between PCS and VCS is 0.027700142589951404           
-- The T test is a good choice for this question because we are comparing the means of groups. We chose 0.05/36 by using alpha bernouli as our significant level due to there being a total of 36 comparisons needed. This is because we don’t have that much evidence to reject this null hypothesis. 
+  - The P value between CBLOL and LCK is 0.09463990461494619
+  - The P value between CBLOL and LCS is 0.7876156683770301
+  - The P value between CBLOL and LEC is 0.5373527716345259
+  - The P value between CBLOL and LJL is 0.10207328430808504
+  - The P value between CBLOL and LLA is 0.6261142149262305
+  - The P value between CBLOL and LPL is 0.0005256706367859629
+  - The P value between CBLOL and PCS is 9.005130506488931e-05
+  - The P value between CBLOL and VCS is 4.375151567768843e-11
+  - The P value between LCK and LCS is 0.1315083620379078
+  - The P value between LCK and LEC is 0.3472804909787468
+  - The P value between LCK and LJL is 0.0009890558218275361
+  - The P value between LCK and LLA is 0.3161959546967639
+  - The P value between LCK and LPL is 9.314774760529871e-11
+  - The P value between LCK and PCS is 2.992591664215375e-09
+  - The P value between LCK and VCS is 6.694916135134773e-19
+  - The P value between LCS and LEC is 0.6912287326362201
+  - The P value between LCS and LJL is 0.0490400404839303
+  - The P value between LCS and LLA is 0.7936396948845161
+  - The P value between LCS and LPL is 3.992102102090342e-05
+  - The P value between LCS and PCS is 1.0572958670128944e-05
+  - The P value between LCS and VCS is 5.076060868498343e-13
+  - The P value between LEC and LJL is 0.03522194308818198
+  - The P value between LEC and LLA is 0.9126692988401927
+  - The P value between LEC and LPL is 3.2366223946643715e-05
+  - The P value between LEC and PCS is 1.599648873927649e-05
+  - The P value between LEC and VCS is 5.662536887803942e-12
+  - The P value between LJL and LLA is 0.051695087953736514
+  - The P value between LJL and LPL is 0.2577316630510385
+  - The P value between LJL and PCS is 0.047206801281997945
+  - The P value between LJL and VCS is 2.060568938709088e-05
+  - The P value between LLA and LPL is 0.0002075167042443045
+  - The P value between LLA and PCS is 4.897368171899932e-05
+  - The P value between LLA and VCS is 4.2819772152884424e-11
+  - The P value between LPL and PCS is 0.11803774648906282
+  - The P value between LPL and VCS is 5.6061553426685654e-06
+  - The P value between PCS and VCS is 0.027700142589951404           
+  - The T test is a good choice for this question because we are comparing the means of groups. We chose 0.05/36 by using alpha bernouli as our significant level due to there being a total of 36 comparisons needed. This is because we don’t have that much evidence to reject this null hypothesis. 
 - After running our hyothesis test, We see that there are significant differences in average game duration between certain leagues.
 
 ---
