@@ -37,21 +37,25 @@ The distribution of the game duration for competitive league matches looks to be
 <p><iframe src="plot5.html" width=800 height=600 frameBorder=0></iframe></p>
 
 - Bivariate Analysis:
-As seen here, the distribution of the gamelengths of the leagues do vary, which suggest that there could potentially be significant difference
+As seen here, the distribution of the gamelengths of the leagues do vary, which suggest that there could potentially mean there are significant differences
         in the gamelengths that each league has.
 <p><iframe src="plot2.html" width=800 height=600 frameBorder=0></iframe></p>
 
 - Interesting Aggregates:
 This outlines the stats of all the maximum, minimum, standard deviation, variance, etc, of the game durations of each tier 1 league. From there
-        we can deduce which leagues stand out from the rest which can better help accept or reject the null hypothesis.
+        we can deduce which leagues stand out from the rest which can better help accept or reject the null hypothesis by looking at their stats.
         
-| league   |   count |   max |    mean |   median |   min |    std |    var |
-|:---------|--------:|------:|--------:|---------:|------:|-------:|-------:|
-| CBLOL    |     243 |  2861 | 1974.09 |     1928 |  1275 | 322.13 | 103768 |
-| LCK      |     467 |  3326 | 2020.06 |     1957 |  1145 | 359.66 | 129359 |
-| LCS      |     306 |  3097 | 1981.59 |     1923 |  1308 | 325.31 | 105827 |
-| LEC      |     243 |  3293 | 1993.26 |     1952 |  1176 | 361.49 | 130677 |
-| LJL      |     214 |  3006 | 1921.77 |     1870 |  1137 | 360.55 | 129998 |
+| league   |   count |   max |    mean |   median |   min |    std |      var |
+|:---------|--------:|------:|--------:|---------:|------:|-------:|---------:|
+| CBLOL    |     243 |  2861 | 1974.09 |     1928 |  1275 | 322.13 | 103768   |
+| LCK      |     467 |  3326 | 2020.06 |     1957 |  1145 | 359.66 | 129359   |
+| LCS      |     306 |  3097 | 1981.59 |     1923 |  1308 | 325.31 | 105827   |
+| LEC      |     243 |  3293 | 1993.26 |     1952 |  1176 | 361.49 | 130677   |
+| LJL      |     214 |  3006 | 1921.77 |     1870 |  1137 | 360.55 | 129998   |
+| LLA      |     187 |  3351 | 1989.54 |     1930 |  1352 | 330.59 | 109292   |
+| LPL      |     786 |  3363 | 1893.44 |     1856 |  1150 | 313.9  |  98536.1 |
+| PCS      |     271 |  3047 | 1858.03 |     1809 |  1115 | 342.04 | 116989   |
+| VCS      |     323 |  2910 | 1800.96 |     1769 |  1071 | 288.26 |  83092.6 |
 
 ---
 
@@ -70,12 +74,12 @@ We assume that 'doublekills' and 'wpm' do not depend on each other because wpm m
 ---
 
 ## Hypothesis Testing:
-- Null Hypothesis: There is no significant difference in the average game length between tier 1 leagues in League of Legends.
-- Alternative hypothesis: There is a significant difference in the average game lengths between tier 1 leagues in League of Legends.
+- Null Hypothesis: There is no significant difference in the average game length between all of the tier 1 leagues in League of Legends.
+- Alternative hypothesis: There are significant differences in the average game lengths between tier 1 leagues in League of Legends.
 - Test statistic: T-test
-- Significance level: 0.05
+- Significance level: 0.05/36, using alpha bernouli since there are 9 leagues in tier 1 and a total of 36 comparisons for all of the leagues
 - P-value: 3.1489400690188618e-24
-- The T test is a good choice for this question because we are comparing the means of groups. We choose 0.05 as our significant level is because we don’t have that much evidence to reject this null hypothesis. 
-- We see that there is a significant difference in average game duration between different regions.
+- The T test is a good choice for this question because we are comparing the means of groups. We chose 0.05/36 by using alpha bernouli as our significant level due to there being a total of 36 comparisons needed. This is because we don’t have that much evidence to reject this null hypothesis. 
+- After running our hyothesis test, We see that there are significant differences in average game duration between certain leagues.
 
 ---
